@@ -10,7 +10,6 @@ document.getElementById("buttonId").addEventListener("click", function(val){
 			nombre.classList.remove('showInput');
 		}
 
-
 		if(contrasena.value.length < 6 || contrasena.value == "123456"){
 			contrasena.classList.add('showInput');
 		}else{
