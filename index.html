@@ -13,7 +13,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body id="index1">
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 		    <div class="dropdown">
@@ -24,7 +24,7 @@
 				    <li><a href="#">Inglés</a></li>
 				    <li><a href="#">Frances</a></li>
 			 	</ul>
-			</div>
+			</div>  
 		</div><!-- /.container-fluid -->
 	</nav>
 	<section class="logo container-fluid">
@@ -33,17 +33,18 @@
 	<section class="logIn container-fluid">
 		<input type="text" class="form" id="usuarioId" placeholder="Nombre de Usuario">
 		<input type="text" class="form" id="pwId" placeholder="Contraseña">
-		
 	
 		<button id="buttonId"><a id="linkId" href="#">Iniciar Sesión</a></button>
 		
-		<p>Has olvidado tu infotmación de inicio de sesión? <b>Obtén Ayuda</b></p>
+		<p>Has olvidado tu infotmación de inicio de sesión? <a href="#"><b>Obtén Ayuda</b></a></p>
 	</section>
 	<section class="facebook container-fluid">
 		<div class="line">
-			
+			<div class="lines"></div>
+			<div><p>o</p></div>
+			<div class="lines"></div>
 		</div>
-		<button id="faceButton">Inicia Sesión con Facebook</button>
+		<button id="faceButton"><i class="fa fa-facebook-official" aria-hidden="true"></i>Inicia Sesión con Facebook</button>
 	</section>
 	<footer class="container-fluid">
 		<p>No tienes una cuenta <b><a href="index2.html">Regístrate</a></b></p>
