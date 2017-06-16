@@ -110,7 +110,7 @@ a:hover{
 	font-size: 20px;
 	padding-right: 10px;
 }
-footer{
+footer#final1{
 	background-color: rgba(255,255,255,0.3);
 	position:absolute;
     bottom:0;

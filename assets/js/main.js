@@ -1,9 +1,9 @@
 var nombre = document.getElementById("usuarioId");
 var contrasena = document.getElementById("pwId");
 
-document.getElementById("linkId").addEventListener("click", function(val){
+document.getElementById("buttonId").addEventListener("click", function(val){
 
-		if(nombre.value.charAt(0) != nombre.value.charAt(0).toUpperCase() || nombre.value == ""){
+		if(nombre.value == ""){
 			
 			nombre.classList.add('showInput');
 		}else{
@@ -11,14 +11,13 @@ document.getElementById("linkId").addEventListener("click", function(val){
 		}
 
 
-		if(contrasena.value == ""){
+		if(contrasena.value.length < 6 || contrasena.value == "123456"){
 			contrasena.classList.add('showInput');
 		}else{
 			contrasena.classList.remove('showInput');
 		}
 
-		if(nombre.value.charAt(0) == nombre.value.charAt(0).toUpperCase() && nombre.value != ""
-		 && contrasena.value != ""){
+		if(nombre.value != "" && contrasena.value.length >= 6 && contrasena.value != "123456"){
 
 			document.getElementById("linkId").setAttribute("href", "index2.html");
 		}
@@ -37,3 +36,5 @@ function drop(ev) {
   var id_foto = ev.dataTransfer.getData('text');
   ev.target.appendChild(document.getElementById(id_foto));
 }
+
+
